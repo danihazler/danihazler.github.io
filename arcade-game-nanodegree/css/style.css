@@ -1,0 +1,138 @@
+body {
+  background-image: url("../images/bg.png");
+  font-family: 'Londrina Solid', cursive;
+  font-size: 26px;
+  font-weight: 100;
+  text-align: center;
+}
+
+main.container {
+  max-width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.flex,
+.flex-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.info-panel {
+  width: 500px;
+  margin: 0 auto -5% auto;
+}
+
+.performance {
+  width: 50%;
+}
+
+.info-panel img {
+  padding: 0 5%;
+  width: 40px;
+  height: 45px;
+}
+
+#lives-panel {
+  padding-left: 5%;
+}
+
+#lives-counter {
+  padding-left: 9%;
+}
+
+#score-panel {
+  padding-right: 5%;
+}
+
+#timer {
+  width: 45%;
+}
+
+.congrats-modal,
+.rules-modal,
+.game-over-modal {
+  background: rgba(255, 255, 0, 0.87);
+  border-radius: 25px;
+  padding: 3%;
+  position: absolute;
+}
+
+.rules-modal {
+  min-height: 500px;
+  width: 34%;
+  top: 9%;
+  left: 30%;
+}
+
+.congrats-modal,
+.game-over-modal {
+  height: auto;
+  width: 25%;
+  top: 25%;
+  left: 35%;
+}
+
+.congrats-modal,
+.game-over-modal,
+.hide-modal {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.show-modal {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.rules-modal .flex {
+  align-items: flex-start;
+  padding-bottom: 3%;
+}
+
+.rules-modal img {
+  width: 40px;
+  height: 45px;
+  padding-top: 18%;
+}
+
+.congrats-modal button,
+.rules-modal button,
+.game-over-modal button {
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #2fc52f;
+  background: #fff;
+  border-radius:5px;
+  text-align: center;
+  cursor: pointer;
+  padding: .5em;
+  width: 50%;
+}
+
+.rules-right {
+  width: 42%;
+  padding-top: 4%;
+}
+
+.rules-info {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: justify;
+  margin-left: 5%;
+}
+
+.congrats-modal img {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 13px auto;
+}
