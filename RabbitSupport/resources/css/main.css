@@ -119,8 +119,11 @@ header a:hover {
 }*/
 
 .main-banner h3 {
+  background-color: rgb(255, 255, 255, 0.6);
   color: #099000;
-  padding-bottom: 15px;
+  width: 330px;
+  padding-left: 7px;
+  margin-bottom: 1rem;
 }
 
 .btn-default i {
