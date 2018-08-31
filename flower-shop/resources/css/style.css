@@ -1,35 +1,29 @@
 body, html {
   font-family: 'Raleway', sans-serif;
 }
-
 /*-------------- HEADER ---------------*/
 /*-------------------------------------*/
-.header {
+.bg-container {
   background-image: radial-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.2)), url("./img/bouquet-bg.jpg");
   background-size: cover;
   height: 100%;
 }
-
-.header .logo {
+header .logo {
   height: 150px;
   width: auto;
 }
-
 /*-------------- NAVBAR ---------------*/
 /*-------------------------------------*/
 .navbar-default {
   background-color: transparent;
   border: none;
 }
-
 ul.nav.navbar-nav {
   padding-top: 52px;
 }
-
 .navbar-default .navbar-nav>li>a {
   color: #fff;
 }
-
 .navbar-nav>li>a {
   padding: 8px 20px;
   margin-right: 5px;
@@ -38,39 +32,32 @@ ul.nav.navbar-nav {
   border-bottom: 2px solid transparent;
   transition: boder-bottom 0.2s;
 }
-
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
   color: #ccc;
   background-color: transparent;
   border-bottom: 2px solid #d8198f;
 }
-
 .navbar-toggle {
   margin-top: 52px;
   margin-right: 25px;
 }
-
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff;
 }
-
 /*-------------- MAIN ---------------*/
 /*-------------------------------------*/
-.main {
+.main-banner {
   padding-bottom: 100px;
 }
-
 blockquote,
-.main p {
+.main-banner p {
   color: #fff;
 }
-
-.main p {
+.main-banner p {
   margin-left: 50px;
   letter-spacing: 0.5px;
 }
-
 blockquote {
   font-family: "Arvo", serif;
   font-size: 2.8em;
@@ -81,7 +68,6 @@ blockquote {
   margin-bottom: 3px;
   padding: 100px 0 0 50px;
 }
-
 /*-------------- BUTTONS ---------------*/
 /*-------------------------------------*/
 .btn:link,
@@ -98,43 +84,36 @@ blockquote {
   margin: 20px -15px 0 50px;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
-
 .btn.btn-default:hover,
 .btn.btn-default:active {
   color: #fff;
   background-color: #d8198f;
 }
-
 button#btn-form:hover,
 button#btn-form:active {
   color: #fff;
   background-color: #d8198f;
 }
-
 /*-------------- SERVICES ---------------*/
 /*-------------------------------------*/
 .services .thumbnail {
   border-style: none;
 }
-
 .services h3 {
   font-family: "Arvo", serif;
   padding: 5px;
 }
-
 .services p,
 .gallery p,
 .contact p {
   padding: 10px;
   text-align: justify;
 }
-
 p.description {
   text-align: center;
   font-size: 110%;
   margin-bottom: 20px;
 }
-
 /*-------------- GALLERY ---------------*/
 /*-------------------------------------*/
 .gallery h2,
@@ -146,7 +125,6 @@ p.description {
   letter-spacing: 1px;
   padding: 40px 0 5px 0;
 }
-
 h2:after {
   display: block;
   height: 2px;
@@ -155,42 +133,35 @@ h2:after {
   width: 100px;
   margin: 20px auto;
 }
-
 .gallery .thumbnail {
   border: 1px solid #d8198f;
 }
-
 .gallery img {
   width: 100%;
 }
-
 /*-------------- CONTACT ---------------*/
 /*-------------------------------------*/
 .form-label {
   font-family: "Arvo", serif;
   font-weight: 200;
 }
-
 .form-control {
   box-shadow: none;
   border-style: none none solid none;
   border-radius: 0;
 }
-
 .text-center {
   overflow: hidden;
 }
-
 #btn-form {
   font-size: 1.1rem;
   width: 130px;
   float: left;
   margin: 0;
 }
-
 /*-------------- FOOTER ---------------*/
 /*-------------------------------------*/
-.footer {
+footer {
   font-family: "Raleway", sans-serif;
   background-color: rgba(216, 25, 143, 0.8);
   color: #fff;
@@ -198,8 +169,7 @@ h2:after {
   margin-top: 80px;
   height: 100px;
 }
-
-.footer p {
+footer p {
   margin-left: 30px;
 }
 
@@ -208,17 +178,14 @@ h2:after {
   float: right;
   margin-right: 30px;
 }
-
 .social-links li {
   display: inline-block;
   margin-right: 20px;
 }
-
 .social-links .fa {
   font-size: 220%;
   color: #fff;
 }
-
 /* -------------- SCROLL TO TOP -----------------------*/
 .scrollToTop {
   font-size: 0.9rem;
