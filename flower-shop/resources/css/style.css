@@ -1,6 +1,11 @@
 body, html {
   font-family: 'Raleway', sans-serif;
 }
+/*-------------- COMMON ---------------*/
+/*-------------------------------------*/
+.hide-bullets {
+  list-style:none;
+}
 /*-------------- HEADER ---------------*/
 /*-------------------------------------*/
 .bg-container {
@@ -135,9 +140,16 @@ h2:after {
 }
 .gallery .thumbnail {
   border: 1px solid #d8198f;
+  padding: 0;
 }
 .gallery img {
   width: 100%;
+}
+div#slider-thumbs {
+  padding-right: 0;
+}
+.col-sm-6.no-padding-left{
+  padding-left: 0;
 }
 /*-------------- CONTACT ---------------*/
 /*-------------------------------------*/
@@ -165,18 +177,25 @@ footer {
   font-family: "Raleway", sans-serif;
   background-color: rgba(216, 25, 143, 0.8);
   color: #fff;
-  padding: 40px 0 80px;
+  padding: 40px 0;
   margin-top: 80px;
-  height: 100px;
+}
+footer .row {
+  padding-bottom: 30px;
 }
 footer p {
-  margin-left: 30px;
+  margin: 0;
 }
-
+.details p {
+  padding-bottom: 5px;
+}
 .social-links {
   list-style: none;
-  float: right;
-  margin-right: 30px;
+  align-items: baseline;
+  text-align: right;
+}
+ul.social-links {
+  margin: 0;
 }
 .social-links li {
   display: inline-block;
@@ -186,6 +205,9 @@ footer p {
   font-size: 220%;
   color: #fff;
 }
+.social-links p {
+  font-size: 1.6rem;
+}
 /* -------------- SCROLL TO TOP -----------------------*/
 .scrollToTop {
   font-size: 0.9rem;
@@ -193,8 +215,9 @@ footer p {
   bottom: 50px;
   right: 50px;
   text-decoration: none;
-  color: #c38f1f;
-  border: 1px solid #c38f1f;
+  color: #3a9617;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid #3a9617;
   border-radius: 100%;
   padding: 5px;
   display: none;
