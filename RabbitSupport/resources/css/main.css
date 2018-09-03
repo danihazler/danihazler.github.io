@@ -96,17 +96,16 @@ header a:hover {
   background-image: linear-gradient(45deg, transparent, #ffffffab);
   height: 100%;
   width: 100%;
-  padding: 40px 0;
+  padding: 40px;
 }
 .main-banner.wrap-row {
   background: url("../images/rabbit5.jpg") no-repeat center center;
   background-size: cover;
-  height: 61vh;
+  height: 62vh;
   padding: 40px 0;
 }
 .main-text {
-  padding: 25px;
-  margin-top: 150px;
+  margin-top: 30px;
 }
 .main-banner h2 {
   font-size: 3rem;
