@@ -101,7 +101,7 @@ header a:hover {
 .main-banner.wrap-row {
   background: url("../images/rabbit5.jpg") no-repeat center center;
   background-size: cover;
-  height: 80vh;
+  height: 61vh;
   padding: 40px 0;
 }
 .main-text {
@@ -150,15 +150,22 @@ header a:hover {
 .rabbits.wrap-row {
   align-items: flex-start;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .rabbit {
   background-color: #eeeddf;
   text-align: center;
-  width: 100%;
+  width: 254px;
   min-height: 455px;
   margin: 30px 0 0 25px;
   padding: 10px 15px;
   position: relative;
+}
+.rabbit-photo img {
+  width: 100%;
+}
+.rabbit-description {
+  padding-top: 15px;
 }
 .rabbit-description ul {
   padding-top: 20px;
