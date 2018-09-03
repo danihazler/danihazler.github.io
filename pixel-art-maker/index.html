@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pixel Art Maker!</title
+    <title>Pixel Art Maker!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|VT323" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1>Lab: Pixel Art Maker</h1>
-  <div class="main-div">
-    <div class="side-div">
+  <div class="container">
+    <aside>
       <h2>Choose Grid Size</h2>
       <form id="sizePicker">
         <div class="grid-input">
@@ -25,12 +27,21 @@
       <input type="color" id="colorPicker">
 
       <h2>Instructions</h2>
-      <p><span class="step-color">&#9642;</span> Choose the size of your grid. <br> 30 x 60 suggested.</p>
-      <p><span class="step-color">&#9642;</span> Pick any colour you wish.</p>
-      <p><span class="step-color">&#9642;</span> Single click paints a single cell. Hold and drag to paint multiple cells.</p>
-      <p><span class="step-color">&#9642;</span> Double click on a cell to delete colour.</p>
-      <p><span class="step-color">&#9642;</span> To clean the whole canvas click on Build button.</p>
-    </div>
+      <p>
+        <span class="step-color">&#9642;</span> Choose the size of your grid. <br> 30 x 60 suggested.
+      </p>
+      <p>
+        <span class="step-color">&#9642;</span> Pick any colour you wish.</p>
+      <p>
+        <span class="step-color">&#9642;</span> Single click paints a single cell. Hold and drag to paint multiple cells.
+      </p>
+      <p>
+        <span class="step-color">&#9642;</span> Double click on a cell to delete colour.
+      </p>
+      <p>
+        <span class="step-color">&#9642;</span> To clean the whole canvas click on Build button.
+      </p>
+    </aside>
     <div class="grid-div">
       <table id="pixel_canvas"></table>
     </div>

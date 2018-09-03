@@ -25,14 +25,15 @@
     }
   }
 
-  //Submit event of the form itself, instead of the click event of the button, because it’s a lot more clear what your intention is, and preventing the default event and calling the makeGrid function (mentor explanation for better undertanding)
+  /*Submit event of the form itself, instead of the click event of the button, and preventing the default event and calling the makeGrid function */
   const sizePicker = $("#sizePicker");
   sizePicker.on("submit", function(e) {
     e.preventDefault();
     makeGrid();
   });
 
-  //Color Picker input updates its value itself, no need for an event listener
+  /* Color Picker input updates its value itself,
+  no need for an event listener */
   const colorPicker = $("#colorPicker");
 
   //Add background-color to the selected table cell
@@ -55,12 +56,14 @@
       isDrawing = false;
     });
 
-    //Add colour to a single cell
+    /* Add colour to a single cell
+    */
     $("table").on("click", "td", function() {
       $(this).css("background-color", colorPicker.val());
     });
 
-    //Removes colour from the cell
+    /*Removes colour from the cell
+    */
     $("td").on("dblclick", function() {
       $(this).css("background", "none");
     })
