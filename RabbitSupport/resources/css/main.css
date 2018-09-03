@@ -6,42 +6,35 @@ body {
   font-size: 18px;
   line-height: 1.3;
 }
-
 .wrap-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .container {
   max-width: 1260px;
   width: 100%;
   margin: 0 auto;
 }
-
 .btn-default {
   font-family: 'Amatic SC', cursive;
   background: #fff;
   border: none;
   border-radius: 5px;
 }
-
 .btn-default a {
   color: #f18202;
   font-size: 1.5rem;
   text-decoration: none;
   padding: 5px 23px;
 }
-
 .btn-default:hover {
   background-color: rgba(139, 119, 57, 0.65);
   color: #fff; /* to avoid small coloring bug when hovering it */
 }
-
 .btn-default a:hover {
   color: #fff;
 }
-
 /* ------------- COMMON STYLES -------------------- */
 /* ------------------------------------------------ */
 .about,
@@ -51,19 +44,16 @@ body {
   padding: 40px;
   border-top: 1px solid rgba(139, 119, 57, 0.25);
 }
-
 .about h2,
 .adopt-text h2,
 .sponsors h2 {
   font-size: 2rem;
   padding-bottom: 10px;
 }
-
 .about-text ul,
 .adopting ul {
   list-style: disc;
 }
-
 .sponsors p,
 footer p {
   padding: 5px 0;
@@ -74,7 +64,6 @@ header {
   background-color: #fff;
   padding: 20px;
 }
-
 header h1 {
   color: #f18202;
   font-family: 'Amatic SC', cursive;
@@ -84,88 +73,79 @@ header h1 {
   word-spacing: 5px;
   letter-spacing: 2px;
 }
-
 header a {
   text-decoration: none;
   color: #099000;
   padding: 0 20px;
   font-size: 1.2rem;
 }
-
 header a:visited {
   color: #f18202;
 }
-
 header a:hover {
   color: #ccc99F;
 }
-
 /* ------------- MAIN BANNER -------------------- */
 /* ------------------------------------------------ */
+#bg{
+  background-image: linear-gradient(45deg, transparent, #ffffffab);
+  height: 100%;
+  width: 100%;
+  padding: 40px 0;
+}
 .main-banner.wrap-row {
   background: url("../images/rabbit5.jpg") no-repeat center center;
   background-size: cover;
   height: 80vh;
   padding: 40px 0;
 }
-
+.main-text {
+  padding: 25px;
+  margin-top: 150px;
+}
 .main-banner h2 {
   font-size: 3rem;
   padding-bottom: 20px;
 }
-
-/*.main-banner span {
-  color: #eeeddf;
-}*/
-
 .main-banner h3 {
-  background-color: rgb(255, 255, 255, 0.6);
+  background-image: radial-gradient(white, transparent);
   color: #099000;
   width: 330px;
   padding-left: 7px;
   margin-bottom: 1rem;
 }
-
 .btn-default i {
   padding-right: 4px;
 }
-
 .main-banner .btn-default {
   margin-left: 5px;
 }
-
 /* ------------------ ABOUT -------------------- */
 /* ------------------------------------------------ */
 .about p {
   padding-bottom: 10px;
 }
-
 .about-text {
   max-width: 800px;
 }
-
 .about-text ul {
   margin-left: 20px;
   padding-bottom: 20px;
 }
-
 .about-text .btn-default {
   border: 1px solid #099000;
   margin-left: 8px;
 }
-
 .about-img img {
   max-width: 355px;
   height: auto;
 }
-
 /* ----------------- RABBITS -------------------- */
 /* ------------------------------------------------ */
 .rabbits.wrap-row {
   align-items: flex-start;
   justify-content: center;
 }
-
 .rabbit {
   background-color: #eeeddf;
   text-align: center;
@@ -175,7 +155,6 @@ header a:hover {
   padding: 10px 15px;
   position: relative;
 }
-
 .rabbit-description ul {
   padding-top: 20px;
   position: absolute;
@@ -183,93 +162,76 @@ header a:hover {
   left: 50%;
   transform: translateX(-50%); /* to center properly */
 }
-
 .rabbit-description i {
   color: #099000;
   font-size: 1.5rem;
   padding-right: 5px;
 }
-
 .rabbit-description a {
   text-decoration: none;
   color: inherit;
 }
-
 .rabbit-description a:hover {
   color: #f18202;
 }
-
 /* --------- SPONSORS -- ADOPTING ------------------ */
 /* ------------------------------------------------ */
 .sponsors img {
   padding: 10px;
 }
-
 .sponsors .btn-default {
   border: 1px solid #099000;
   margin-top: 20px;
 }
-
 .sponsor.wrap-row,
 .adopting .wrap-row,
 .it-works .wrap-row {
   justify-content: center;
   align-items: flex-start;
 }
-
 .sponsor-content,
 .adopt-content,
 .it-works-content {
   max-width: 800px;
 }
-
 .sponsor-content,
 .adopt-image,
 .it-works-content {
   padding-right: 50px;
 }
-
 .rabbit-container {
   background-color: #eeeddf;
   max-width: 400px;
   text-align: center;
   margin: 15px;
 }
-
 .rabbit-container span {
   display: block;
   font-size: 0.7rem;
   padding: 3px 4px;
 }
-
 .adopting {
   padding-top: 40px;
 }
-
 .adopt-content ul {
   margin-left: 20px;
 }
-
 .it-works {
   padding-top: 70px;
 }
-
 /* ------------------- FOOTER -------------------- */
 /* ------------------------------------------------ */
 footer {
   font-size: 0.9rem;
-  padding: 30px 0;
+  /* padding: 30px 0; */
 }
-
 footer span {
   font-weight: 700;
 }
-
 .contact a {
   text-decoration: none;
   color: #8b7739;
 }
-
 .contact a:hover {
   color: #f18202;
 }
