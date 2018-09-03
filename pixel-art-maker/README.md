@@ -1,16 +1,18 @@
 # Pixel Art Maker Project
 
-## Table of Contents
+Udacity Nanodegree Project built from scratch.
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
 
 ## Instructions
 
-To get started, open `designs.js` and start building out the app's functionality.
+▪ Choose the size of your grid. 30 x 60 suggested.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+▪ Pick any colour you wish.
 
-## Contributing
+▪ Single click paints a single cell. Hold and drag to paint multiple cells.
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+▪ Double click on a cell to delete colour.
+
+▪ To clean the whole canvas click on Build button.
+
+### Have fun!!!
