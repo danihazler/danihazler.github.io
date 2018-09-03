@@ -67,7 +67,7 @@ header {
 header h1 {
   color: #f18202;
   font-family: 'Amatic SC', cursive;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   word-spacing: 5px;
@@ -84,6 +84,11 @@ header a:visited {
 }
 header a:hover {
   color: #ccc99F;
+}
+.menu-icon {
+  width: 30px;
+  height: auto;
+  visibility: hidden;
 }
 /* ------------- MAIN BANNER -------------------- */
 /* ------------------------------------------------ */
