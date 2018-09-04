@@ -79,9 +79,6 @@ header a {
   padding: 0 20px;
   font-size: 1.2rem;
 }
-header a:visited {
-  color: #f18202;
-}
 header a:hover {
   color: #ccc99F;
 }
@@ -114,7 +111,10 @@ header a:hover {
 .main-banner h3 {
   background-image: radial-gradient(white, transparent);
   color: #099000;
-  width: 330px;
+  font-weight: bold;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  width: 376px;
   padding-left: 7px;
   margin-bottom: 1rem;
 }
