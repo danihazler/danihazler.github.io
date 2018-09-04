@@ -35,6 +35,9 @@ body {
 .btn-default a:hover {
   color: #fff;
 }
+.show {
+  display: flex;
+}
 /* ------------- COMMON STYLES -------------------- */
 /* ------------------------------------------------ */
 .about,
@@ -76,15 +79,19 @@ header h1 {
 header a {
   text-decoration: none;
   color: #099000;
-  padding: 0 20px;
+  padding: 0 20px 15px;
   font-size: 1.2rem;
 }
 header a:hover {
   color: #ccc99F;
 }
 .menu-icon {
+  cursor: pointer;
   width: 30px;
   height: auto;
+  position: absolute;
+  top: 30px;
+  right: 30px;
   visibility: hidden;
 }
 /* ------------- MAIN BANNER -------------------- */
