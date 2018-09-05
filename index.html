@@ -1,12 +1,64 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
-    <title>Projects</title>
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
   </head>
   <body>
-
-    <a href="arcade-game-nanodegree/index.html"> Arcade Game </a>
+    <header class="container flex">
+      <img id="logo" src="images/logo.svg" alt="Logo">
+      <div class="title">
+        <h1>Daniele Pastore</h1>
+        <h2>Front-End Samurai</h2>
+      </div>
+    </header>
+    <main class="container">
+      <picture>
+        <source srcset="images/computer-desk-xs.jpg" media="(max-width: 420px)">
+        <source srcset="images/computer-desk-md.jpg" media="(max-width: 680px)">
+        <img src="images/computer-desk.jpg" alt="Computer Desk">
+      </picture>
+      <!-- ****************** FEATURED WORKS ****************** -->
+      <section class="featured-works">
+        <h2>Featured Works</h2>
+        <div class="flex">
+          <div class="work">
+            <div class="work-img">
+              <img src="" alt="">
+            </div>
+            <div class="work-description">
+              <h3>PROJECT 1</h3>
+              <a href="http://lolasschool.superhi.com/">More here</a>
+            </div>
+          </div> <!-- end of work 1 -->
+          <div class="work">
+            <div class="work-img">
+              <img src="" alt="">
+            </div>
+            <div class="work-description">
+              <h3>PROJECT 2</h3>
+              <a href="http://model-card.superhi.com/">More here</a>
+            </div>
+          </div> <!-- end of work 2 -->
+          <div class="work">
+            <div class="work-img">
+              <img src="" alt="">
+            </div>
+            <div class="work-description">
+              <h3>PROJECT 3</h3>
+              <a href="#">More here</a>
+            </div>
+          </div> <!-- end of work 3 -->
+        </div> <!-- end of flex div -->
+      </section> <!-- end featured-works -->
+    </main>
+    <!-- ****************** FOOTER ************************* -->
+    <footer class="container">
+      <p>Build a Portfolio Site &copy; Nanodegree Udacity Project</p>
+    </footer>
 
   </body>
 </html>
