@@ -1,0 +1,121 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 300;
+  color: #8a8a8a;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* ---- SIMPLE RESETING ----- */
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ------------- HEADER ----- */
+/* -------------------------- */
+
+header.container {
+  border-bottom: 4px solid #f2f2f2;
+  padding: 2% 0;
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+}
+
+.title {
+  text-align: right;
+}
+
+.title h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.title h2 {
+  color: #ff8a00;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+/* --------------- MAIN ----- */
+/* -------------------------- */
+
+main.container {
+  padding-top: 2%;
+}
+
+/* ---------- FEATURED WORKS - */
+/* -------------------------- */
+
+.featured-works {
+  padding-top: 5%;
+  margin-bottom: 7%;
+}
+
+.featured-works h2 {
+  text-align: left;
+  padding-bottom: 2%;
+  font-size: 2.8em;
+}
+
+.work-description {
+  padding-top: 4%;
+}
+
+.work-description h3 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.work-description a {
+  font-size: 1.2em;
+  color: #ff8a00;
+  text-decoration: none;
+}
+
+.work-description a:hover {
+  color: #ccc;
+}
+
+/* -------------- FOOTER ---- */
+/* -------------------------- */
+
+footer {
+  background-color: #f2f2f2;
+  padding-top: 3%;
+  height: 15vh;
+  width: 100%;
+}
