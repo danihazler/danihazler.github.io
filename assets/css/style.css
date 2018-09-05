@@ -7,10 +7,10 @@ body, html {
 }
 
 body {
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 300;
-  color: #8a8a8a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555;
   line-height: 1.4;
 }
 
@@ -46,11 +46,12 @@ ul {
 /* -------------------------- */
 
 header.container {
+  background-color: #1abc9c;
   border-bottom: 4px solid #f2f2f2;
-  padding: 2% 0;
+  padding: 4% 2%;
 }
 
-#logo {
+.perfil-photo {
   width: 100px;
   height: auto;
 }
@@ -60,7 +61,10 @@ header.container {
 }
 
 .title h1 {
-  font-size: 4em;
+  color: white;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
@@ -70,12 +74,28 @@ header.container {
   letter-spacing: 2px;
 }
 
+/* ---- PERSONAL PROFILE ---- */
+/* -------------------------- */
+.personal-profile {
+  padding: 70px 20px;
+  background-color: #f2f2f2;
+}
+.personal-profile h2 {
+  font-size: 3rem;
+  margin-bottom: 7px;
+  text-align: left;
+}
+.personal-profile p {
+  line-height: 29px;
+  font-size: 1.1rem;
+}
+
 /* --------------- MAIN ----- */
 /* -------------------------- */
 
-main.container {
+/* main.container {
   padding-top: 2%;
-}
+} */
 
 /* ---------- FEATURED WORKS - */
 /* -------------------------- */
