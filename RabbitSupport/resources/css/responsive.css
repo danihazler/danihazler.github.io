@@ -47,3 +47,68 @@
     margin-top: 10px;
   }
 }
+@media only screen and (max-width: 549px){
+  header a {
+    padding: 0;
+    margin-left: -57px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .menu-icon {
+    top: 23px;
+    right: 17px;
+  }
+  .main-banner.wrap-row {
+    padding: 0;
+    height: 80vh;
+  }
+  .main-text {
+    margin-top: 35px;
+  }
+  #bg {
+    padding: 0 15px;
+    height: 100%;
+  }
+  .main-banner h2 {
+    font-size: 1.4rem;
+    padding-bottom: 30px;
+  }
+  .main-banner h3 {
+    display: none;
+  }
+  .main-banner .btn-default{
+    display: block;
+  }
+  button.btn-default {
+    margin-top: 10px;
+  }
+  .btn-default a {
+    font-size: 1rem;
+  }
+  footer .wrap-row {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .contact {
+    margin-bottom: 35px;
+  }
+  .rabbit.wrap-column {
+    margin-left: 0;
+  }
+  .rabbit-description a {
+    font-size: .8rem;
+  }
+  .about, .adopt, .sponsors {
+    padding: 20px;
+  }
+  .sponsor-content,
+  .it-works-content,
+  .rabbit-container img {
+    padding: 0;
+  }
+  .rabbit-container {
+    padding: 10px;
+    margin: 10px;
+  }
+}

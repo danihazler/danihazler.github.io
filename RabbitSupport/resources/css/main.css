@@ -196,6 +196,7 @@ header a:hover {
 /* ------------------------------------------------ */
 .sponsors img {
   padding: 10px;
+  width: 100%;
 }
 .sponsors .btn-default {
   border: 1px solid #099000;
