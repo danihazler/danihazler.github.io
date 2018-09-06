@@ -35,16 +35,27 @@ ul {
   padding: 0;
   margin: 0;
 }
+/* ----------- ANIMATION ---- */
+/* -------------------------- */
+.img-animation {
+  width: 64%;
+  text-align: left;
+}
+#title-img {
+  position: relative;
+  width: 100px;
+  height: auto;
+  animation: an-animation 5s 3;
+  -webkit-animation: an-animation 5s 3;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
 /* ------------- HEADER ----- */
 /* -------------------------- */
 header.container {
   background-color: #1abc9c;
-  border-bottom: 4px solid #f2f2f2;
+  border-bottom: 4px solid #ffe003;;
   padding: 4% 2%;
-}
-.perfil-photo {
-  width: 100px;
-  height: auto;
 }
 .title {
   text-align: right;
@@ -122,4 +133,58 @@ footer {
   padding-top: 3%;
   height: 15vh;
   width: 100%;
+}
+/* ---------- KEYFRAMES ---- */
+/* -------------------------- */
+@keyframes an-animation {
+  0% {
+    transform: rotate(0deg);
+    left: 0px;
+  }
+  25% {
+    transform: rotate(20deg);
+    left: 0px;
+  }
+  50% {
+    transform: rotate(0deg);
+    left: 450px;
+  }
+  55% {
+    transform: rotate(0deg);
+    left: 450px;
+  }
+  70% {
+    transform: rotate(0deg);
+    left: 450px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left: 0px;
+  }
+}
+@-webkit-keyframes an-animation {
+  0% {
+    transform: rotate(0deg);
+    left: 0px;
+  }
+  25% {
+    transform: rotate(20deg);
+    left: 0px;
+  }
+  50% {
+    transform: rotate(0deg);
+    left: 450px;
+  }
+  55% {
+    transform: rotate(0deg);
+    left: 450px;
+  }
+  70% {
+    transform: rotate(0deg);
+    left: 450px;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left: 0px;
+  }
 }
