@@ -194,10 +194,6 @@ header a:hover {
 }
 /* --------- SPONSORS -- ADOPTING ------------------ */
 /* ------------------------------------------------ */
-.sponsors img {
-  padding: 10px;
-  width: 100%;
-}
 .sponsors .btn-default {
   border: 1px solid #099000;
   margin-top: 20px;
@@ -223,6 +219,10 @@ header a:hover {
   max-width: 400px;
   text-align: center;
   margin: 15px;
+  padding: 10px;
+}
+.rabbit-container img {
+  width: 100%;
 }
 .rabbit-container span {
   display: block;
