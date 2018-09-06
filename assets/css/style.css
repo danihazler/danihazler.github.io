@@ -107,8 +107,13 @@ header.container {
   font-size: 2.8em;
 }
 .work {
-  width: 30%;
-  padding-top: 40px;
+  width: 285px;
+  min-height: 360px;
+  padding-top: 4%;
+}
+.work a {
+  text-decoration: none;
+  color: inherit;
 }
 .work-img img {
   width: 100%;
@@ -119,11 +124,6 @@ header.container {
 .work-description h3 {
   font-size: 1.2em;
   text-transform: uppercase;
-}
-.work-description a {
-  font-size: 1.2em;
-  color: #ff8a00;
-  text-decoration: none;
 }
 .work-description a:hover {
   color: #ccc;
