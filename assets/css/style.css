@@ -6,22 +6,15 @@ body, html {
   overflow: auto;
 }
 body {
+  background-color: #797979;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: #555;
   line-height: 1.4;
 }
 .container {
   max-width: 950px;
   margin: 0 auto;
   text-align: center;
-}
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  transform: translateY(50%);
 }
 /* ---- SIMPLE RESETING ----- */
 h1, h2, h3, h4, h5, p {
@@ -30,163 +23,93 @@ h1, h2, h3, h4, h5, p {
 header, nav, footer, section, article, div {
   box-sizing: border-box;
 }
+/* --------- LETTERS -------- */
+/* -------------------------- */
+.as-in-block {
+  font-size: 4rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 ul {
   list-style: none;
+  display: block;
   padding: 0;
   margin: 0;
 }
+ul li, div.as-in-block {
+  display: inline-block;
+}
+ul li {
+  font-family: 'Montserrat', monospace;
+  color: #644F88;
+  text-shadow: 3px 3px 0 #FFA45A, -3px -3px 0 #7ACDB1;
+}
+.hide {
+  visibility: hidden;
+}
+/* ----------- BUTTON ------- */
+/* -------------------------- */
+a {
+  text-decoration: none;
+  color: #bdbdbd;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 1;
+}
 /* ----------- ANIMATION ---- */
 /* -------------------------- */
-.img-animation {
-  width: 64%;
-  text-align: left;
-}
-#title-img {
-  position: relative;
-  width: 100px;
-  height: auto;
-  animation: an-animation 5s 3;
-  -webkit-animation: an-animation 5s 3;
-  animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
-}
-/* ------------- HEADER ----- */
-/* -------------------------- */
-header.container {
-  background-color: #1abc9c;
-  border-bottom: 4px solid #ffe003;;
-  padding: 4% 2%;
-}
-.title {
-  text-align: right;
-}
-.title h1 {
-  color: white;
-  font-size: 2em;
-  font-weight: 400;
+.down, .up {
   letter-spacing: 3px;
-  text-transform: uppercase;
+  position: relative;
 }
-.title h2 {
-  color: #ff8a00;
-  font-size: 2em;
-  letter-spacing: 2px;
+.down {
+  animation: first-down 4s linear forwards;
+  -webkit-animation: first-down 4s linear forwards;
 }
-/* ---- PERSONAL PROFILE ---- */
-/* -------------------------- */
-.personal-profile {
-  padding: 70px 50px;
-  background-color: #f2f2f2;
+.up {
+  animation: sec-up 4s linear forwards;
+  -webkit-animation: sec-up 4s linear forwards;
 }
-.personal-profile h2 {
-  font-size: 3rem;
-  margin-bottom: 7px;
-  text-align: left;
+.btn {
+  letter-spacing: 3px;
+  position: relative;
+  animation: appear 10s linear 2s forwards;
+  -webkit-animation: appear 10s linear forwards;
 }
-.personal-profile p {
-  line-height: 29px;
-  font-size: 1.1rem;
-  text-align: justify;
-}
-/* --------------- MAIN ----- */
-/* -------------------------- */
 
-/* main.container {
-  padding-top: 2%;
-} */
+@keyframes first-down {
+    0%   {top:0px;}
+    25%  {top:0px;}
+    50%  {top:45px;}
+    75%  {top:45px;}
+    100% {top:45px;}
+}
+@-webkit-keyframes first-down {
+    0%   {top:0px;}
+    25%  {top:0px;}
+    50%  {top:45px;}
+    75%  {top:45px;}
+    100% {top:45px;}
+}
 
-/* ---------- FEATURED WORKS - */
-/* -------------------------- */
-.featured-works {
-  padding-top: 5%;
-  margin-bottom: 7%;
+@keyframes sec-up {
+    0%   {bottom:0px;}
+    25%  {bottom:0px;}
+    50%  {bottom:45px;}
+    75%  {bottom:45px;}
+    100% {bottom:45px;}
 }
-.featured-works h2 {
-  text-align: left;
-  padding-bottom: 2%;
-  font-size: 2.8em;
+@-webkit-keyframes sec-up {
+    0%   {bottom:0px;}
+    25%  {bottom:0px;}
+    50%  {bottom:45px;}
+    75%  {bottom:45px;}
+    100% {bottom:45px;}
 }
-.work {
-  width: 285px;
-  min-height: 360px;
-  padding-top: 4%;
+
+@keyframes appear {
+  0% {opacity: 0;}
 }
-.work a {
-  text-decoration: none;
-  color: inherit;
-}
-.work-img img {
-  width: 100%;
-}
-.work-description {
-  padding-top: 4%;
-}
-.work-description h3 {
-  font-size: 1.2em;
-  text-transform: uppercase;
-}
-.work-description a:hover {
-  color: #ccc;
-}
-/* -------------- FOOTER ---- */
-/* -------------------------- */
-footer {
-  background-color: #f2f2f2;
-  padding-top: 3%;
-  height: 15vh;
-  width: 100%;
-}
-/* ---------- KEYFRAMES ---- */
-/* -------------------------- */
-@keyframes an-animation {
-  0% {
-    transform: rotate(0deg);
-    left: 0px;
-  }
-  25% {
-    transform: rotate(20deg);
-    left: 0px;
-  }
-  50% {
-    transform: rotate(0deg);
-    left: 450px;
-  }
-  55% {
-    transform: rotate(0deg);
-    left: 450px;
-  }
-  70% {
-    transform: rotate(0deg);
-    left: 450px;
-  }
-  100% {
-    transform: rotate(-360deg);
-    left: 0px;
-  }
-}
-@-webkit-keyframes an-animation {
-  0% {
-    transform: rotate(0deg);
-    left: 0px;
-  }
-  25% {
-    transform: rotate(20deg);
-    left: 0px;
-  }
-  50% {
-    transform: rotate(0deg);
-    left: 450px;
-  }
-  55% {
-    transform: rotate(0deg);
-    left: 450px;
-  }
-  70% {
-    transform: rotate(0deg);
-    left: 450px;
-  }
-  100% {
-    transform: rotate(-360deg);
-    left: 0px;
-  }
+@-webkit-keyframes appear {
+  0% {opacity: 0;}
 }
