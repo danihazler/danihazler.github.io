@@ -1,0 +1,38 @@
+@media only screen and (max-width: 550px){
+  .as-in-block {
+    font-size: 2rem;
+  }
+  ul li {
+    text-shadow: 2px 2px 0 #FFA45A, -2px -2px 0 #7ACDB1;
+  }
+
+  @keyframes first-down {
+      0%   {top:0px;}
+      25%  {top:0px;}
+      50%  {top:22px;}
+      75%  {top:22px;}
+      100% {top:22px;}
+  }
+  @-webkit-keyframes first-down {
+      0%   {top:0px;}
+      25%  {top:0px;}
+      50%  {top:22px;}
+      75%  {top:22px;}
+      100% {top:22px;}
+  }
+
+  @keyframes sec-up {
+      0%   {bottom:0px;}
+      25%  {bottom:0px;}
+      50%  {bottom:22px;}
+      75%  {bottom:22px;}
+      100% {bottom:22px;}
+  }
+  @-webkit-keyframes sec-up {
+      0%   {bottom:0px;}
+      25%  {bottom:0px;}
+      50%  {bottom:22px;}
+      75%  {bottom:22px;}
+      100% {bottom:22px;}
+  }
+}
